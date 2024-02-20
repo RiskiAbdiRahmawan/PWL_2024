@@ -28,3 +28,6 @@ Route::get('/world',function(){
 Route::get('/',function(){
     return 'Selamat Datang';
 });
+Route::get('/about',function(){
+    return '2241720060 Riski Abdi Rahmawan';
+});
