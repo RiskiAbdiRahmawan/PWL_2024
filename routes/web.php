@@ -31,3 +31,6 @@ Route::get('/',function(){
 Route::get('/about',function(){
     return '2241720060 Riski Abdi Rahmawan';
 });
+Route::get('/user/{name}',function($name){
+    return 'Nama saya '.$name;
+});
