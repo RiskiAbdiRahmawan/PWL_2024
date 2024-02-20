@@ -22,3 +22,6 @@ Route::get('/', function () {
 Route::get('/halo', function () {
     return 'Hello World';
 });
+Route::get('/world',function(){
+    return 'World';
+});
