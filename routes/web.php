@@ -40,6 +40,9 @@ Route::get('/posts/{post}/comments/{comment}', function ($postId, $commentId) {
 Route::get('/articles/{id}', function ($articleId) {
     return 'Halaman artikel dengan ID ' . $articleId;
 });
-Route::get('/user/{name?}', function ($name=null) {
+Route::get('/user/{name?}', function ($name = 'Jhon') {
     return 'Nama saya ' . $name;
 });
+Route::get('/user/profile', function () {
+    return 'Profile';
+})->name('profile');
