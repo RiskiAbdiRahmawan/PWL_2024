@@ -25,3 +25,6 @@ Route::get('/halo', function () {
 Route::get('/world',function(){
     return 'World';
 });
+Route::get('/',function(){
+    return 'Selamat Datang';
+});
