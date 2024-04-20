@@ -8,14 +8,11 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ asset('template/plugins/fontawesome-free/css/all.min.css')}}">
-  {{-- <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"> --}}
+  <link rel="stylesheet" href="{{ asset('template/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{ asset('template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
-  {{-- <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css"> --}}
+  <link rel="stylesheet" href="{{ asset('template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('template/dist/css/adminlte.min.css')}}">
-  {{-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> --}}
+  <link rel="stylesheet" href="{{ asset('template/dist/css/adminlte.min.css') }}">
 
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -24,6 +21,7 @@
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
     {{-- <img src="{{ asset('template/dist/img/user1-128x128.jpg')}}" alt=""> --}}
+    {{-- <img src="{{ asset('template/dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60"> --}}
     <img src="{{ asset('template/dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
   </div>
 
@@ -1715,6 +1713,36 @@
 </div>
 <!-- ./wrapper -->
 
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="{{ asset('template/plugins/jquery/jquery.min.js')}}"></script>
+{{-- <script src="plugins/jquery/jquery.min.js"></script> --}}
+<!-- Bootstrap -->
+<script src="{{ asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+{{-- <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script> --}}
+<!-- overlayScrollbars -->
+<script src="{{ asset('template/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+{{-- <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script> --}}
+<!-- AdminLTE App -->
+<script src="{{ asset('template/dist/js/adminlte.js')}}"></script>
+{{-- <script src="dist/js/adminlte.js"></script> --}}
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="{{ asset('template/plugins/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
+{{-- <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script> --}}
+<script src="{{ asset('template/plugins/raphael/raphael.min.js')}}"></script>
+{{-- <script src="plugins/raphael/raphael.min.js"></script> --}}
+<script src="{{ asset('template/plugins/jquery-mapael/jquery.mapael.min.js')}}"></script>
+{{-- <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script> --}}
+<script src="{{ asset('template/plugins/jquery-mapael/maps/usa_states.min.js')}}"></script>
+{{-- <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script> --}}
+<!-- ChartJS -->
+<script src="{{ asset('template/plugins/chart.js/Chart.min.js')}}"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="{{ asset('template/dist/js/demo.js')}}"></script>
+<script src="{{ asset('template/dist/js/pages/dashboard2.js')}}"></script>
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
 <script src="{{ asset('template/plugins/jquery/jquery.min.js')}}"></script>
