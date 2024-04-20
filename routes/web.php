@@ -21,14 +21,15 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+// 
 Route::get('/', function () {
-    return 'Hello World';
+    return view('welcome');
 });
 Route::get('/hello', [WelcomeController::class, 'hello']);
 Route::get('/world', function () {
     return 'World';
 });
-Route::get('/', [PageController::class, 'index']);
+// Route::get('/', [PageController::class, 'index']);
 Route::get('/about', [PageController::class, 'about']);
 Route::get('/user/{name}', function ($name) {
     return 'Nama saya ' . $name;
@@ -43,7 +44,7 @@ Route::get('/user/{name?}', function ($name = 'Jhon') {
 Route::get('/user/profile', function () {
     return 'Profile';
 })->name('profile');
-Route::get('/', [HomeController::class, 'home']);
+// Route::get('/', [HomeController::class, 'home']);
 Route::get('/about', [AboutController::class, 'about']);
 Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 Route::resource('photos', PhotoController::class);
