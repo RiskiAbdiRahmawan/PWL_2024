@@ -27,7 +27,22 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'username' => 'required|string|min:3|unique:m_users,username',
+            'nama' => 'required|string|max:100',
+            'password' => 'required|min:5',
+            'level_id' => 'required|integer',
+        ]);
+
+        m_user::create([
+            'username' => $request->username,
+            'nama' => $request->nama,
+            'password' => Hash::make('$request->password'),
+            'password' => bcrypt($request->password),
+            'level_id' => $request->level_id,
+        ]);
+
+        return redirect('/user')->with('success', 'Data user berhasil disimpan');
     }
 
     /**
